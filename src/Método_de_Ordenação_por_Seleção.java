@@ -1,4 +1,6 @@
-public class Main {
+// Alunos: GIANLLUCA DO CARMO LEME e BRUNNO AIRES SILVA TURMA: A
+
+public class Método_de_Ordenação_por_Seleção {
     public static void main(String[] args) {
 
         int[] vetor = new int[10];
