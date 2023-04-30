@@ -1,6 +1,6 @@
-// Alunos: GIANLLUCA DO CARMO LEME e BRUNNO AIRES SILVA TURMA: A
+// Alunos: GIANLLUCA DO CARMO LEME e BRUNNO AIRES SILVA TURMA: A01
 
-public class Método_de_Ordenação_por_Seleção {
+public class Metodo_de_Ordenacao_por_Selecao {
     public static void main(String[] args) {
 
         int[] vetor = new int[10];
@@ -9,10 +9,14 @@ public class Método_de_Ordenação_por_Seleção {
             vetor[i] = (int) (Math.random() * vetor.length);
         }
 
-        System.out.println("Desordenado");
+        System.out.println("Desordenado:");
         for(int i=0; i < vetor.length; i++){
-            System.out.println(vetor[i]);
+            System.out.print(vetor[i]);
+            if(i < vetor.length - 1){
+                System.out.print(", ");
+            }
         }
+        System.out.println(".");
 
         //Selection sort O(N^2)
         int posicao_menor, aux;
@@ -27,11 +31,15 @@ public class Método_de_Ordenação_por_Seleção {
             vetor[posicao_menor] = vetor[i];
             vetor[i] = aux;
         }
-        System.out.println("\n\nOrdenado");
+        System.out.println("\nOrdenado:");
         for(int i=0; i < vetor.length; i++){
-            System.out.println(vetor[i]);
+            System.out.print(vetor[i]);
+            if(i < vetor.length - 1){
+                System.out.print(", ");
+            }
         }
+        System.out.println(".");
         int menor = vetor[0];
-        System.out.println("o menor valor é:"+menor);
+        System.out.println("\no menor valor e: "+menor+".");
     }
 }
