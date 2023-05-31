@@ -1,3 +1,7 @@
+// Alunos: GIANLLUCA DO CARMO LEME (202009490)
+// BRUNNO AIRES SILVA (202014616)
+// TURMA: A01
+
 public class ShellSort {
     public static void main(String[] args) {
         int[] vetor = new int[10];
@@ -5,7 +9,7 @@ public class ShellSort {
         for (int i = 0; i < vetor.length; i++) {
             vetor[i] = (int) (Math.random() * vetor.length);
         }
-        System.out.println("Vetor desordenado:");
+        System.out.println("Vetor desordenado: ");
         for (int i = 0; i < vetor.length; i++) {
             System.out.print(vetor[i]);
             if (i < vetor.length - 1) {
@@ -33,15 +37,16 @@ public class ShellSort {
                 vetor[j] = elemento;
             }
 
-            System.out.println("\nsequencia de h = "+h);
+            System.out.println("\nsequencia de h = "+h+":");
             for (int i = 0; i < vetor.length; i++) {
                 System.out.print(vetor[i]);
                 if (i < vetor.length - 1) {
                     System.out.print(", ");
                 }
             }
+            System.out.print(".");
             h = h / 2;
-        } //0 1 2 3 4 5 6 7 8 9 10
+        }
 
         System.out.println("");
         System.out.println("\nVetor ordenado:");
@@ -50,7 +55,7 @@ public class ShellSort {
             if (i < vetor.length - 1) {
                 System.out.print(", ");
             }
-
         }
+        System.out.print(".");
     }
 }
