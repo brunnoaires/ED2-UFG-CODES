@@ -14,8 +14,6 @@ public class ShellSort {
         }
         System.out.println(".");
         //  Imprimir o vetor para cada sequência de h-ordenado.
-
-
         int h = 1;
         int n = vetor.length;
         while (h < n) {
