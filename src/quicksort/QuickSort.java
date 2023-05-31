@@ -1,3 +1,9 @@
+// Alunos: GIANLLUCA DO CARMO LEME (202009490)
+// BRUNNO AIRES SILVA (202014616)
+// TURMA: A01
+
+// Para executar o programa é necessário a classe de teste, onde está sendo executado o método do Quicksort.
+
 package quicksort;
 
 /**
